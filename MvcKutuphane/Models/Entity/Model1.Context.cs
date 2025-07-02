@@ -12,6 +12,8 @@ namespace MvcKutuphane.Models.Entity
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
+    using System.Data.Entity.Core.Objects;
+    using System.Linq;
     
     public partial class DBKUTUPHANEEntities : DbContext
     {
@@ -36,5 +38,30 @@ namespace MvcKutuphane.Models.Entity
         public virtual DbSet<TBLYAZAR> TBLYAZAR { get; set; }
         public virtual DbSet<TBLHAKKIMIZDA> TBLHAKKIMIZDA { get; set; }
         public virtual DbSet<TBLILETISIM> TBLILETISIM { get; set; }
+    
+        public virtual ObjectResult<string> EnFazlaKitapYazar()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("EnFazlaKitapYazar");
+        }
+    
+        public virtual ObjectResult<string> EnAktifUye()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("EnAktifUye");
+        }
+    
+        public virtual ObjectResult<string> EnCokOkunanKitap()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("EnCokOkunanKitap");
+        }
+    
+        public virtual ObjectResult<Nullable<int>> BugunVerilenEmanetKitaplar()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<int>>("BugunVerilenEmanetKitaplar");
+        }
+    
+        public virtual ObjectResult<string> EnBasariliEleman()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("EnBasariliEleman");
+        }
     }
 }

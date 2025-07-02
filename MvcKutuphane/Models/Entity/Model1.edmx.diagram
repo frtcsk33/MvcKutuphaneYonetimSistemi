@@ -6,7 +6,7 @@
     <edmx:Diagrams>
       <Diagram DiagramId="34b6503c4490444b8b6dcb3976ee0af8" Name="Diagram1" ZoomLevel="74">
         <EntityTypeShape EntityType="DBKUTUPHANEModel.TBLCEZALAR" Width="1.5" PointX="7.5" PointY="1.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="DBKUTUPHANEModel.TBLHAREKET" Width="1.5" PointX="5.25" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBKUTUPHANEModel.TBLHAREKET" Width="2.5" PointX="4.75" PointY="1.125" IsExpanded="true" />
         <EntityTypeShape EntityType="DBKUTUPHANEModel.TBLKASA" Width="1.5" PointX="8.125" PointY="4.625" IsExpanded="true" />
         <EntityTypeShape EntityType="DBKUTUPHANEModel.TBLKATEGORI" Width="1.5" PointX="0.75" PointY="1.75" IsExpanded="true" />
         <EntityTypeShape EntityType="DBKUTUPHANEModel.TBLKITAP" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
