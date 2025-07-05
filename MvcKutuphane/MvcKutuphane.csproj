@@ -138,6 +138,7 @@
     <Compile Include="Controllers\KategoriController.cs" />
     <Compile Include="Controllers\KayitOlController.cs" />
     <Compile Include="Controllers\KitapController.cs" />
+    <Compile Include="Controllers\MesajController.cs" />
     <Compile Include="Controllers\OduncController.cs" />
     <Compile Include="Controllers\PanelController.cs" />
     <Compile Include="Controllers\PersonelController.cs" />
@@ -187,6 +188,9 @@
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Entity\TBLKITAP.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entity\TBLMESAJLAR.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Entity\TBLPERSONEL.cs">
@@ -578,6 +582,9 @@
     <Content Include="webpanel\vendor\jquery\jquery.min.map" />
     <Content Include="webpanel\vendor\jquery\jquery.slim.min.map" />
     <Content Include="Views\Panel\Index.cshtml" />
+    <Content Include="Views\Mesaj\Index.cshtml" />
+    <Content Include="Views\Mesaj\yeniMesaj.cshtml" />
+    <Content Include="Views\Mesaj\Giden.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
